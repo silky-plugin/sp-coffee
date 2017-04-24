@@ -49,8 +49,8 @@ exports.registerPlugin = function(cli, options){
     getCompileContent(cli, inputFilePath, data, (error, content)=>{
       if(error){return cb(error)};
       if(data.status == 200){
-        data.outputFilePath = data.outputFilePath.replace(/(\coffee)$/, "js");
-        data.outputFileRelativePath = data.outputFileRelativePath.replace(/(\coffee)$/, "js")
+        data.outputFilePath = data.outputFilePath.replace(/(\.coffee)$/, ".js");
+        data.outputFileRelativePath = data.outputFileRelativePath.replace(/(\.coffee)$/, ".js")
       }
       cb(null, content);
     })
