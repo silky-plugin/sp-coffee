@@ -1,6 +1,6 @@
 {
   "name": "sp-coffee",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "dependencies": {
     "coffee-script": "^1.12.3"
